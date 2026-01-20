@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FH5 Car Checker</title>
+  <meta name="description" content="Search, filter, and save your favorite Forza Horizon 5 cars." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <a class="brand" href="index.html">
+        <span class="brandDot"></span>
+        <span>FH5 Car Checker</span>
+      </a>
+
+      <nav class="nav">
+        <a class="navLink active" href="index.html">Search</a>
+        <a class="navLink" href="about.html">About</a>
+        <a class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="topRow">
+        <div>
+          <h1>Search FH5 cars</h1>
+          <p class="muted">Type a make, model word, or year. Filter, sort, and save favorites.</p>
+        </div>
+        <div class="pill">
+          <span id="count">0</span>
+          <span class="muted">cars</span>
+        </div>
+      </div>
+
+      <div class="filtersRow">
+        <select id="makeFilter" aria-label="Filter by make">
+          <option value="">All makes</option>
+        </select>
+
+        <select id="yearFilter" aria-label="Filter by year">
+          <option value="">All years</option>
+        </select>
+
+        <select id="collectFilter" aria-label="Filter by source">
+          <option value="">All sources</option>
+        </select>
+
+        <select id="sortBy" aria-label="Sort cars">
+          <option value="relevance">Sort: Relevance</option>
+          <option value="az">Sort: A → Z</option>
+          <option value="za">Sort: Z → A</option>
+          <option value="newest">Sort: Newest</option>
+          <option value="oldest">Sort: Oldest</option>
+        </select>
+
+        <label class="favToggle">
+          <input id="favOnly" type="checkbox" />
+          <span>Favorites only</span>
+        </label>
+
+        <button id="clearFilters" type="button" class="ghostBtn">Clear</button>
+      </div>
+
+      <div class="searchRow">
+        <div class="searchWrap">
+          <input id="q" type="text" placeholder="e.g. Lamborghini, Skyline, 1997..." autocomplete="off" />
+          <div id="ac" class="ac hidden" role="listbox" aria-label="Suggestions"></div>
+        </div>
+        <button id="btn">Search</button>
+      </div>
+
+      <div id="chips" class="chips"></div>
+
+      <section class="listWrap">
+        <div class="listHeader">
+          <h2>Results</h2>
+          <p class="muted">Click a car to open details. Star ☆ to save favorites.</p>
+        </div>
+        <div id="all" class="grid"></div>
+      </section>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="footerInner">
+        <p class="muted">© <span id="yr"></span> FH5 Car Checker</p>
+        <div class="footerLinks">
+          <a href="privacy.html">Privacy</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <p class="muted tiny">Not affiliated with Microsoft or Playground Games. Data comes from your local cars list file.</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

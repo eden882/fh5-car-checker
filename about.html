@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — FH5 Car Checker</title>
+  <meta name="description" content="About FH5 Car Checker." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <a class="brand" href="index.html"><span class="brandDot"></span><span>FH5 Car Checker</span></a>
+      <nav class="nav">
+        <a class="navLink" href="index.html">Search</a>
+        <a class="navLink active" href="about.html">About</a>
+        <a class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card page">
+      <h1>About</h1>
+      <p class="muted">FH5 Car Checker is a simple, fast way to search and filter cars in Forza Horizon 5.</p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Search cars by make, model words, or year</li>
+        <li>Filter by make/year/source</li>
+        <li>Sort results</li>
+        <li>Save favorites on your device</li>
+      </ul>
+
+      <h2>Disclaimer</h2>
+      <p class="muted">Not affiliated with Microsoft or Playground Games.</p>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="footerInner">
+        <p class="muted">© <span id="yr"></span> FH5 Car Checker</p>
+        <div class="footerLinks">
+          <a href="privacy.html">Privacy</a>
+          <a href="index.html">Search</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>

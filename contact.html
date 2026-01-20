@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — FH5 Car Checker</title>
+  <meta name="description" content="Contact FH5 Car Checker." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <a class="brand" href="index.html"><span class="brandDot"></span><span>FH5 Car Checker</span></a>
+      <nav class="nav">
+        <a class="navLink" href="index.html">Search</a>
+        <a class="navLink" href="about.html">About</a>
+        <a class="navLink active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card page">
+      <h1>Contact</h1>
+      <p class="muted">Want to request a car, report an issue, or suggest a feature?</p>
+
+      <div class="note">
+        <strong>Easy option:</strong> make a Google Form and link it here.
+        <br />
+        <span class="muted">Later you can add an email or socials too.</span>
+      </div>
+
+      <h2>Coming soon</h2>
+      <ul>
+        <li>Feature requests</li>
+        <li>Report missing/incorrect cars</li>
+        <li>Suggestions</li>
+      </ul>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="footerInner">
+        <p class="muted">© <span id="yr"></span> FH5 Car Checker</p>
+        <div class="footerLinks">
+          <a href="privacy.html">Privacy</a>
+          <a href="about.html">About</a>
+          <a href="index.html">Search</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>

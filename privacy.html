@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy — FH5 Car Checker</title>
+  <meta name="description" content="Privacy policy for FH5 Car Checker." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="siteHeader">
+    <div class="container headerInner">
+      <a class="brand" href="index.html"><span class="brandDot"></span><span>FH5 Car Checker</span></a>
+      <nav class="nav">
+        <a class="navLink" href="index.html">Search</a>
+        <a class="navLink" href="about.html">About</a>
+        <a class="navLink" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card page">
+      <h1>Privacy</h1>
+      <p class="muted">
+        FH5 Car Checker does not collect personal information. Favorites are stored locally in your browser.
+      </p>
+
+      <h2>What data is stored?</h2>
+      <ul>
+        <li><strong>Favorites</strong> (stars) are saved in your browser using <code>localStorage</code>.</li>
+        <li>No accounts, no logins, no uploaded data.</li>
+      </ul>
+
+      <h2>Analytics & ads</h2>
+      <p class="muted">
+        This site currently does not use analytics or serve ads. If that changes later, this page will be updated.
+      </p>
+
+      <h2>Contact</h2>
+      <p class="muted">
+        If you have questions, use the <a href="contact.html">contact page</a>.
+      </p>
+    </section>
+
+    <footer class="siteFooter">
+      <div class="footerInner">
+        <p class="muted">© <span id="yr"></span> FH5 Car Checker</p>
+        <div class="footerLinks">
+          <a href="index.html">Search</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
